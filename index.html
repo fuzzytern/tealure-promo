@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tealure</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="jquery.countdown.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        var endDate = "June 1, 2015 15:03:25";
+        $('.countdown.styled').countdown({
+          date: endDate,
+          render: function(data) {
+            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hours</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>minutes</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>seconds</span></div>");
+          }
+        });
+      });
+    </script>
+
+
+
+  </head>
+  <body>
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <div class="wrapp">
+          <div class="container">
+            <div class="countdown styled"></div>
+          </div>
+      </div>
+
+
+    </header>
+    <section class="slide1">
+              <h1>Dear Tea Folk!<br> We're changing for you! Stay tuned and sign up for 40%&nbsp;discount!
+        </h1>
+        <h2>Best regards<br>Tealure Team</h2>
+    </section>
+    <section class="slide2">
+<!-- Begin MailChimp Signup Form -->
+
+<div id="mc_embed_signup">
+<form action="//Tealure.us11.list-manage.com/subscribe/post?u=28fec27d99e8aca9f592c016e&amp;id=494ad7a2c7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">Subscribe to our mailing list</label>
+
+  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_28fec27d99e8aca9f592c016e_494ad7a2c7" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+    </section>
+    <footer>
+        <div class="soc">
+          <a href="https://www.facebook.com/tealure" target="_blank"><img src="img/insta.png"></a>
+          <a href="https://instagram.com/tealure/" target="_blank"><img src="img/fb.png"></a>
+        </div>
+        <p>Tealure
+<br><br>
+info@tealure.com</p>
+    </footer>
+
+
+    <video autoplay loop poster="img/topvid3.jpg" id="bgvid">
+        <source src="img/topvid3.webm" type="video/webm">
+        <source src="img/topvid3.mp4" type="video/mp4">
+    </video>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#invite').ketchup().submit(function() {
+          if ($(this).ketchup('isValid')) {
+            var action = $(this).attr('action');
+            $.ajax({
+              url: action,
+              type: 'POST',
+              data: {
+                email: $('#address').attr('value')
+              },
+              success: function(data){
+                $('#result').html(data).css('color', 'green');
+              },
+              error: function() {
+                $('#result').html('Sorry, an error occurred.').css('color', 'red');
+              }
+            });
+          }
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>

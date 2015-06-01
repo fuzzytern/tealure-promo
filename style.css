@@ -1,0 +1,198 @@
+@media screen and (min-width: 800px) {
+  body {
+    width: 100%;
+    background-color: #000;
+    margin: 0%;
+    /*background-image:url(img/bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;*/ }
+    body video#bgvid {
+      position: absolute;
+      opacity: 0.7;
+      left: 0;
+      top: 0;
+      min-width: 100%;
+      min-height: 20%;
+      z-index: -100; }
+    body header {
+      width: 60%;
+      display: inline-block; }
+      body header img {
+        width: 30%;
+        margin: 2% 5%; }
+      body header .wrapp {
+        vertical-align: 8em;
+        display: inline-block;
+        width: 50%; }
+        body header .wrapp .container {
+          font: 300% "Oswald", sans-serif;
+          color: #fff;
+          display: block; }
+          body header .wrapp .container div {
+            display: inline-block;
+            margin-left: 20px;
+            font-weight: 100;
+            text-align: right; }
+          body header .wrapp .container span {
+            font-size: 30%;
+            display: block;
+            border-top: 1px solid #cecece;
+            padding-top: 5%;
+            text-transform: uppercase; }
+    body .slide1 {
+      width: 35%;
+      margin-left: 0%;
+      vertical-align: -5em;
+      color: #fff;
+      display: inline-block; }
+      body .slide1 h1 {
+        font: 200% "Oswald", sans-serif;
+        margin-left: 0%;
+        line-height: 2em; }
+      body .slide1 h2 {
+        font: 180% "Oswald", sans-serif;
+        text-align: right; }
+    body .slide2 {
+      margin: 0% 5%;
+      width: 90%; }
+      body .slide2 label {
+        font: 180% "Oswald", sans-serif;
+        width: 100%;
+        color: #ffffff;
+        display: block;
+        text-align: left; }
+      body .slide2 input {
+        width: 60%;
+        display: inline-table;
+        text-align: center;
+        border-style: none;
+        font: 150% "Helvetica", serif;
+        height: 2em; }
+      body .slide2 .clear {
+        display: inline-table;
+        margin-top: 0%;
+        width: 20%; }
+        body .slide2 .clear .button {
+          width: 100%;
+          font: 159% "Helvetica", serif;
+          border-style: none;
+          color: #333;
+          background-color: #fff;
+          margin-top: 0%;
+          height: 2em; }
+    body footer {
+      width: 100%; }
+      body footer .soc {
+        margin: 5% auto;
+        display: block;
+        text-align: center;
+        width: 50%; }
+        body footer .soc img {
+          width: 10%;
+          margin: 5% 2% 0% 2%;
+          display: inline-table; }
+      body footer p {
+        font: 150% "Oswald", sans-serif;
+        text-align: center;
+        color: #fff; } }
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+    background-color: #000;
+    margin: 0%;
+    /*background-image:url(img/bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;*/ }
+    body video#bgvid {
+      position: fixed;
+      opacity: 0.7;
+      left: 0;
+      top: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -100; }
+    body header {
+      width: 100%;
+      display: block; }
+      body header img {
+        width: 30%;
+        margin: 5% 10%; }
+      body header .wrapp {
+        vertical-align: 8em;
+        display: inline-block;
+        width: 40%; }
+        body header .wrapp .container {
+          font: 100% "Oswald", sans-serif;
+          color: #fff;
+          display: block; }
+          body header .wrapp .container div {
+            display: inline-block;
+            margin-left: 20px;
+            font-weight: 100;
+            text-align: right; }
+          body header .wrapp .container span {
+            font-size: 30%;
+            display: block;
+            border-top: 1px solid #cecece;
+            padding-top: 5%;
+            text-transform: uppercase; }
+    body .slide1 {
+      width: 90%;
+      margin-left: 5%;
+      vertical-align: -5em;
+      color: #fff;
+      display: inline-block; }
+      body .slide1 h1 {
+        font: 100% "Oswald", sans-serif;
+        margin-left: 0%;
+        line-height: 2em; }
+      body .slide1 h2 {
+        font: 100% "Oswald", sans-serif;
+        text-align: right; }
+    body .slide2 {
+      margin: 0% 5%;
+      width: 90%; }
+      body .slide2 label {
+        font: 100% "Oswald", sans-serif;
+        width: 100%;
+        color: #ffffff;
+        display: block;
+        text-align: left; }
+      body .slide2 input {
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-style: none;
+        font: 150% "Helvetica", serif;
+        height: 2em; }
+      body .slide2 .clear {
+        display: block;
+        margin-top: 2%;
+        width: 100%; }
+        body .slide2 .clear .button {
+          width: 100%;
+          font: 159% "Helvetica", serif;
+          border-style: none;
+          color: #333;
+          background-color: #fff;
+          margin-top: 0%;
+          height: 2em; }
+    body footer {
+      width: 100%; }
+      body footer .soc {
+        margin: 5% auto;
+        display: block;
+        text-align: center;
+        width: 50%; }
+        body footer .soc img {
+          width: 30%;
+          margin: 5% 2% 0% 2%;
+          display: inline-table; }
+      body footer p {
+        font: 150% "Oswald", sans-serif;
+        text-align: center;
+        color: #fff; } }
+
+/*# sourceMappingURL=style.css.map */
