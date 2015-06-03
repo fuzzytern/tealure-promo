@@ -32,12 +32,13 @@ $(function() {
         <div class="container">
           <div class="countdown styled"></div>
         </div>
+         <div class="fb-share-button" data-href="https://facebook.com/tealure " data-layout="button_count"></div>
       </div>
 
 
     </header>
     <section class="slide1">
-      <h1>Dear friends.<br> Time for something new. Be first to try our finest selection of Nepalese tea and get 40% off.
+      <h1>Dear Friends!<br> Time for something new! Be the first to try our finest selection of Nepalese tea and get 40% off.
       </h1>
       <h2>Best of love<br>Tealure Team</h2>
     </section>
@@ -74,7 +75,14 @@ $(function() {
       <source src="img/topvid3.webm" type="video/webm">
       <source src="img/topvid3.mp4" type="video/mp4">
     </video>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=1564100900506694";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <script type="text/javascript">
 $(document).ready(function() {
   $('#invite').ketchup().submit(function() {
